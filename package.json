@@ -19,5 +19,14 @@
   "homepage": "https://github.com/xemyleigh/frontend-project-lvl1#readme",
   "bin": {
     "brain-games": "bin/brai-games.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1"
   }
 }
