@@ -1,31 +1,12 @@
-import readlineSync from 'readline-sync';
+import gameEngine from '../src/index.js';
 
-const oddOrEven = () => {
-  let finish = 1;
+const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  while (finish <= 3) {
-
-    const num = Math.floor(Math.random() * 100);
-    console.log(`Question: ${num}`);
-    const answer = readlineSync.question('Your answer: ');
-    if ((answer === 'yes' && num % 2 === 0) || (answer === 'no' && num % 2 !== 0)) {
-      console.log('Correct!');
-      finish += 1;
-    } else if (answer === 'no' && num % 2 === 0) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.`);
-      console.log(`Let's try again, ${name}!`);
-    } else if (answer === 'yes' && num % 2 !== 0) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`);
-      console.log(`Let's try again, ${name}!`);
-    }
-  }
-  
-  console.log(`Congratulations, ${name}!`);
+const gameData = () => {
+  const number = Math.floor(Math.random() * 100);
+  const question = number.toString();
+  const correctAnswer = (question % 2 === 0) ? 'yes' : 'no';
+  return { question, correctAnswer };
 };
 
-oddOrEven();
+gameEngine(gameRules, gameData);
