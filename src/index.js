@@ -20,8 +20,10 @@ const gameEngine = (rules, data) => {
       finish += 1;
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`Let's try again, ${name}!`);
     }
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default gameEngine;

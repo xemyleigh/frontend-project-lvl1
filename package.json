@@ -20,7 +20,8 @@
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-games.js",
-    "brain-culc": "bin/brain-culc.js"
+    "brain-culc": "bin/brain-culc.js",
+    "brain-gcd": "bin/brain-gcd.js"
   },
   "dependencies": {
     "lodash": "^4.17.21",
