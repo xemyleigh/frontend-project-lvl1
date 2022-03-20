@@ -12,7 +12,7 @@ const gameEngine = (rules, data) => {
 
   while (finish < 4) {
     const { question, correctAnswer } = data();
-    console.log(`Question: ${question}`);
+    console.log(`Question : ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (answer === correctAnswer) {
