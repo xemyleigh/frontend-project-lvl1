@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import gameEngine from '../src/index.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';

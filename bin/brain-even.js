@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import gameEngine from '../src/index.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
