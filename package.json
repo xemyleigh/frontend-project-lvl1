@@ -19,7 +19,7 @@
   "homepage": "https://github.com/xemyleigh/frontend-project-lvl1#readme",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
     "brain-culc": "bin/brain-culc.js",
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
