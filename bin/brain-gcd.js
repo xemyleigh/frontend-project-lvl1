@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import gameEngine from '../src/index.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';

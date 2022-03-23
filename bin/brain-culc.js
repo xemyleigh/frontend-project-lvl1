@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import gameEngine from '../src/index.js';
 
 const gameRules = 'What is the result of the expression?';
