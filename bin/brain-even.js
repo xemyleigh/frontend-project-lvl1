@@ -1,12 +1,5 @@
-import gameEngine from '../src/index.js';
+#!/usr/bin/env node
 
-const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
+import runGame from '../src/games/even.js';
 
-const gameData = () => {
-  const number = Math.floor(Math.random() * 100);
-  const question = number;
-  const correctAnswer = (question % 2 === 0) ? 'yes' : 'no';
-  return { question, correctAnswer };
-};
-
-gameEngine(gameRules, gameData);
+runGame();
