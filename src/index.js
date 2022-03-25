@@ -18,12 +18,13 @@ const gameEngine = (rules, data) => {
     if (answer === correctAnswer) {
       console.log('Correct!');
       finish += 1;
+      console.log(`Congratulations, ${name}!`);
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
+      break
     }
   }
-  console.log(`Congratulations, ${name}!`);
 };
 
 export default gameEngine;
