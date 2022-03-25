@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
 
 const greeting = 'Welcome to the Brain Games!';
@@ -21,7 +19,7 @@ const gameEngine = (rules, data) => {
       console.log('Correct!');
       finish += 1;
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
     }
   }
