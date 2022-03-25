@@ -7,7 +7,7 @@ const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1)) + mi
 const gameData = () => {
   const number = getRandom(1, 100);
   const step = getRandom(3, 20);
-  const missingChar = getRandom(0, 10);
+  const missingChar = getRandom(0, 9);
   const arr = [];
 
   for (let i = number; arr.length < 10; i += step) {
